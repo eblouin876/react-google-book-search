@@ -10,7 +10,9 @@
     "client": "cd client && npm run start",
     "install": "cd client && npm install",
     "build": "cd client && npm run build",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
@@ -24,5 +26,6 @@
     "gh-pages": "^2.0.1",
     "if-env": "^1.0.4",
     "mongoose": "^5.3.16"
-  }
+  },
+  "homepage": "https://eblouin876.github.io/react-google-book-search/"
 }
